@@ -8,3 +8,5 @@ D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.csproj.GenerateResou
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.csproj.CoreCompileInputs.cache
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.exe
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.pdb
+D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.csproj.CopyComplete
+D:\Visual Studio Projects\AIUtils\AIUtils\bin\Debug\VAMemory.dll
