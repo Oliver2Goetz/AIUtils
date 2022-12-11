@@ -1,0 +1,10 @@
+D:\Visual Studio Projects\AIUtils\AIUtils\bin\Debug\AIUtils.exe.config
+D:\Visual Studio Projects\AIUtils\AIUtils\bin\Debug\AIUtils.exe
+D:\Visual Studio Projects\AIUtils\AIUtils\bin\Debug\AIUtils.pdb
+D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.csprojAssemblyReference.cache
+D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.AIUtils.resources
+D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.Properties.Resources.resources
+D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.csproj.GenerateResource.cache
+D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.exe
+D:\Visual Studio Projects\AIUtils\AIUtils\obj\Debug\AIUtils.pdb
