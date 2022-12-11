@@ -23,7 +23,6 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
-            this.pictureboxExit = new System.Windows.Forms.PictureBox();
             this.labelHeadline = new System.Windows.Forms.Label();
             this.comboboxLevels = new System.Windows.Forms.ComboBox();
             this.labelPlayerX = new System.Windows.Forms.Label();
@@ -45,20 +44,11 @@
             this.labelDeveloped = new System.Windows.Forms.Label();
             this.checkboxShowWindowOnTop = new System.Windows.Forms.CheckBox();
             this.labelDivider2 = new System.Windows.Forms.Label();
+            this.pictureboxExit = new System.Windows.Forms.PictureBox();
+            this.pictureboxMinimize = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxExit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxMinimize)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureboxExit
-            // 
-            this.pictureboxExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureboxExit.Image = global::AIUtils.Properties.Resources.cross;
-            this.pictureboxExit.Location = new System.Drawing.Point(548, 12);
-            this.pictureboxExit.Name = "pictureboxExit";
-            this.pictureboxExit.Size = new System.Drawing.Size(40, 40);
-            this.pictureboxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureboxExit.TabIndex = 0;
-            this.pictureboxExit.TabStop = false;
-            this.pictureboxExit.Click += new System.EventHandler(this.pictureboxExit_Click);
             // 
             // labelHeadline
             // 
@@ -78,7 +68,7 @@
             this.comboboxLevels.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboboxLevels.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboboxLevels.FormattingEnabled = true;
-            this.comboboxLevels.Location = new System.Drawing.Point(94, 78);
+            this.comboboxLevels.Location = new System.Drawing.Point(94, 79);
             this.comboboxLevels.Name = "comboboxLevels";
             this.comboboxLevels.Size = new System.Drawing.Size(256, 24);
             this.comboboxLevels.TabIndex = 0;
@@ -290,6 +280,30 @@
             this.labelDivider2.Size = new System.Drawing.Size(580, 2);
             this.labelDivider2.TabIndex = 17;
             // 
+            // pictureboxExit
+            // 
+            this.pictureboxExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureboxExit.Image = global::AIUtils.Properties.Resources.cross;
+            this.pictureboxExit.Location = new System.Drawing.Point(548, 12);
+            this.pictureboxExit.Name = "pictureboxExit";
+            this.pictureboxExit.Size = new System.Drawing.Size(40, 40);
+            this.pictureboxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureboxExit.TabIndex = 0;
+            this.pictureboxExit.TabStop = false;
+            this.pictureboxExit.Click += new System.EventHandler(this.pictureboxExit_Click);
+            // 
+            // pictureboxMinimize
+            // 
+            this.pictureboxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureboxMinimize.Image = global::AIUtils.Properties.Resources.line;
+            this.pictureboxMinimize.Location = new System.Drawing.Point(497, 12);
+            this.pictureboxMinimize.Name = "pictureboxMinimize";
+            this.pictureboxMinimize.Size = new System.Drawing.Size(40, 40);
+            this.pictureboxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureboxMinimize.TabIndex = 18;
+            this.pictureboxMinimize.TabStop = false;
+            this.pictureboxMinimize.Click += new System.EventHandler(this.pictureboxMinimize_Click);
+            // 
             // AIUtils
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -297,6 +311,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(600, 400);
             this.ControlBox = false;
+            this.Controls.Add(this.pictureboxMinimize);
             this.Controls.Add(this.labelDivider2);
             this.Controls.Add(this.checkboxShowWindowOnTop);
             this.Controls.Add(this.labelDeveloped);
@@ -329,6 +344,7 @@
             this.Load += new System.EventHandler(this.AIUtils_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AIUtils_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxExit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxMinimize)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,6 +374,7 @@
         private System.Windows.Forms.Label labelDeveloped;
         private System.Windows.Forms.CheckBox checkboxShowWindowOnTop;
         private System.Windows.Forms.Label labelDivider2;
+        private System.Windows.Forms.PictureBox pictureboxMinimize;
     }
 }
 

@@ -189,6 +189,13 @@ namespace AIUtils {
             Application.Exit();
         }
 
+        /*
+         * Minimize form on click
+         */
+        private void pictureboxMinimize_Click(object sender, EventArgs e) {
+            AIUtils.ActiveForm.WindowState = FormWindowState.Minimized;
+        }
+
         #endregion form
 
         #region asyncUiElements
@@ -228,7 +235,7 @@ namespace AIUtils {
         private List<String> getLevels() {
             List<String> levels = new List<String>() {
                 "SCI_HOSPITAL_UPPER",
-                "SCI_HOSPITAL_LOWER"
+                "TECH_COMMS"
             };
 
             levels.Sort();
