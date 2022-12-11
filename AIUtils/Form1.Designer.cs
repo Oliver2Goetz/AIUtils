@@ -43,6 +43,8 @@
             this.labelPlayerCalculatedZ = new System.Windows.Forms.Label();
             this.labelPlayerCalculatedX = new System.Windows.Forms.Label();
             this.labelDeveloped = new System.Windows.Forms.Label();
+            this.checkboxShowWindowOnTop = new System.Windows.Forms.CheckBox();
+            this.labelDivider2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxExit)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,9 +74,10 @@
             // 
             this.comboboxLevels.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboboxLevels.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.comboboxLevels.BackColor = System.Drawing.Color.White;
             this.comboboxLevels.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboboxLevels.FormattingEnabled = true;
-            this.comboboxLevels.Location = new System.Drawing.Point(94, 98);
+            this.comboboxLevels.Location = new System.Drawing.Point(94, 78);
             this.comboboxLevels.Name = "comboboxLevels";
             this.comboboxLevels.Size = new System.Drawing.Size(256, 24);
             this.comboboxLevels.TabIndex = 0;
@@ -85,7 +88,7 @@
             // 
             this.labelPlayerX.AutoSize = true;
             this.labelPlayerX.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelPlayerX.Location = new System.Drawing.Point(12, 215);
+            this.labelPlayerX.Location = new System.Drawing.Point(12, 195);
             this.labelPlayerX.Name = "labelPlayerX";
             this.labelPlayerX.Size = new System.Drawing.Size(26, 27);
             this.labelPlayerX.TabIndex = 1;
@@ -95,7 +98,7 @@
             // 
             this.labelPlayerZ.AutoSize = true;
             this.labelPlayerZ.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelPlayerZ.Location = new System.Drawing.Point(12, 283);
+            this.labelPlayerZ.Location = new System.Drawing.Point(12, 263);
             this.labelPlayerZ.Name = "labelPlayerZ";
             this.labelPlayerZ.Size = new System.Drawing.Size(25, 27);
             this.labelPlayerZ.TabIndex = 2;
@@ -105,7 +108,7 @@
             // 
             this.labelPlayerY.AutoSize = true;
             this.labelPlayerY.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelPlayerY.Location = new System.Drawing.Point(12, 249);
+            this.labelPlayerY.Location = new System.Drawing.Point(12, 229);
             this.labelPlayerY.Name = "labelPlayerY";
             this.labelPlayerY.Size = new System.Drawing.Size(25, 27);
             this.labelPlayerY.TabIndex = 3;
@@ -116,8 +119,9 @@
             this.textboxPlayerCoordinateX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.textboxPlayerCoordinateX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxPlayerCoordinateX.Font = new System.Drawing.Font("Roboto", 16F);
-            this.textboxPlayerCoordinateX.Location = new System.Drawing.Point(51, 215);
+            this.textboxPlayerCoordinateX.Location = new System.Drawing.Point(51, 195);
             this.textboxPlayerCoordinateX.Name = "textboxPlayerCoordinateX";
+            this.textboxPlayerCoordinateX.ReadOnly = true;
             this.textboxPlayerCoordinateX.Size = new System.Drawing.Size(133, 26);
             this.textboxPlayerCoordinateX.TabIndex = 0;
             this.textboxPlayerCoordinateX.TabStop = false;
@@ -127,8 +131,9 @@
             this.textboxPlayerCoordinateY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.textboxPlayerCoordinateY.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxPlayerCoordinateY.Font = new System.Drawing.Font("Roboto", 16F);
-            this.textboxPlayerCoordinateY.Location = new System.Drawing.Point(51, 249);
+            this.textboxPlayerCoordinateY.Location = new System.Drawing.Point(51, 229);
             this.textboxPlayerCoordinateY.Name = "textboxPlayerCoordinateY";
+            this.textboxPlayerCoordinateY.ReadOnly = true;
             this.textboxPlayerCoordinateY.Size = new System.Drawing.Size(133, 26);
             this.textboxPlayerCoordinateY.TabIndex = 4;
             this.textboxPlayerCoordinateY.TabStop = false;
@@ -138,8 +143,9 @@
             this.textboxPlayerCoordinateZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.textboxPlayerCoordinateZ.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxPlayerCoordinateZ.Font = new System.Drawing.Font("Roboto", 16F);
-            this.textboxPlayerCoordinateZ.Location = new System.Drawing.Point(51, 283);
+            this.textboxPlayerCoordinateZ.Location = new System.Drawing.Point(51, 263);
             this.textboxPlayerCoordinateZ.Name = "textboxPlayerCoordinateZ";
+            this.textboxPlayerCoordinateZ.ReadOnly = true;
             this.textboxPlayerCoordinateZ.Size = new System.Drawing.Size(133, 26);
             this.textboxPlayerCoordinateZ.TabIndex = 5;
             this.textboxPlayerCoordinateZ.TabStop = false;
@@ -148,7 +154,7 @@
             // 
             this.labelSelectLevel.AutoSize = true;
             this.labelSelectLevel.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelSelectLevel.Location = new System.Drawing.Point(12, 98);
+            this.labelSelectLevel.Location = new System.Drawing.Point(12, 78);
             this.labelSelectLevel.Name = "labelSelectLevel";
             this.labelSelectLevel.Size = new System.Drawing.Size(64, 27);
             this.labelSelectLevel.TabIndex = 6;
@@ -158,7 +164,7 @@
             // 
             this.labelCheatTable.AutoSize = true;
             this.labelCheatTable.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelCheatTable.Location = new System.Drawing.Point(12, 174);
+            this.labelCheatTable.Location = new System.Drawing.Point(12, 154);
             this.labelCheatTable.Name = "labelCheatTable";
             this.labelCheatTable.Size = new System.Drawing.Size(127, 27);
             this.labelCheatTable.TabIndex = 7;
@@ -168,7 +174,7 @@
             // 
             this.labelDivider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelDivider.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelDivider.Location = new System.Drawing.Point(10, 150);
+            this.labelDivider.Location = new System.Drawing.Point(10, 130);
             this.labelDivider.Name = "labelDivider";
             this.labelDivider.Size = new System.Drawing.Size(580, 2);
             this.labelDivider.TabIndex = 0;
@@ -177,7 +183,7 @@
             // 
             this.labelOpenCAGE.AutoSize = true;
             this.labelOpenCAGE.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelOpenCAGE.Location = new System.Drawing.Point(259, 174);
+            this.labelOpenCAGE.Location = new System.Drawing.Point(259, 154);
             this.labelOpenCAGE.Name = "labelOpenCAGE";
             this.labelOpenCAGE.Size = new System.Drawing.Size(119, 27);
             this.labelOpenCAGE.TabIndex = 14;
@@ -188,8 +194,9 @@
             this.textboxPlayerCoordinateCalculatedZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.textboxPlayerCoordinateCalculatedZ.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxPlayerCoordinateCalculatedZ.Font = new System.Drawing.Font("Roboto", 16F);
-            this.textboxPlayerCoordinateCalculatedZ.Location = new System.Drawing.Point(298, 283);
+            this.textboxPlayerCoordinateCalculatedZ.Location = new System.Drawing.Point(298, 263);
             this.textboxPlayerCoordinateCalculatedZ.Name = "textboxPlayerCoordinateCalculatedZ";
+            this.textboxPlayerCoordinateCalculatedZ.ReadOnly = true;
             this.textboxPlayerCoordinateCalculatedZ.Size = new System.Drawing.Size(133, 26);
             this.textboxPlayerCoordinateCalculatedZ.TabIndex = 13;
             this.textboxPlayerCoordinateCalculatedZ.TabStop = false;
@@ -199,8 +206,9 @@
             this.textboxPlayerCoordinateCalculatedY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.textboxPlayerCoordinateCalculatedY.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxPlayerCoordinateCalculatedY.Font = new System.Drawing.Font("Roboto", 16F);
-            this.textboxPlayerCoordinateCalculatedY.Location = new System.Drawing.Point(298, 249);
+            this.textboxPlayerCoordinateCalculatedY.Location = new System.Drawing.Point(298, 229);
             this.textboxPlayerCoordinateCalculatedY.Name = "textboxPlayerCoordinateCalculatedY";
+            this.textboxPlayerCoordinateCalculatedY.ReadOnly = true;
             this.textboxPlayerCoordinateCalculatedY.Size = new System.Drawing.Size(133, 26);
             this.textboxPlayerCoordinateCalculatedY.TabIndex = 12;
             this.textboxPlayerCoordinateCalculatedY.TabStop = false;
@@ -210,8 +218,9 @@
             this.textboxPlayerCoordinateCalculatedX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
             this.textboxPlayerCoordinateCalculatedX.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textboxPlayerCoordinateCalculatedX.Font = new System.Drawing.Font("Roboto", 16F);
-            this.textboxPlayerCoordinateCalculatedX.Location = new System.Drawing.Point(298, 215);
+            this.textboxPlayerCoordinateCalculatedX.Location = new System.Drawing.Point(298, 195);
             this.textboxPlayerCoordinateCalculatedX.Name = "textboxPlayerCoordinateCalculatedX";
+            this.textboxPlayerCoordinateCalculatedX.ReadOnly = true;
             this.textboxPlayerCoordinateCalculatedX.Size = new System.Drawing.Size(133, 26);
             this.textboxPlayerCoordinateCalculatedX.TabIndex = 8;
             this.textboxPlayerCoordinateCalculatedX.TabStop = false;
@@ -220,7 +229,7 @@
             // 
             this.labelPlayerCalculatedY.AutoSize = true;
             this.labelPlayerCalculatedY.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelPlayerCalculatedY.Location = new System.Drawing.Point(259, 249);
+            this.labelPlayerCalculatedY.Location = new System.Drawing.Point(259, 229);
             this.labelPlayerCalculatedY.Name = "labelPlayerCalculatedY";
             this.labelPlayerCalculatedY.Size = new System.Drawing.Size(25, 27);
             this.labelPlayerCalculatedY.TabIndex = 11;
@@ -230,7 +239,7 @@
             // 
             this.labelPlayerCalculatedZ.AutoSize = true;
             this.labelPlayerCalculatedZ.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelPlayerCalculatedZ.Location = new System.Drawing.Point(259, 283);
+            this.labelPlayerCalculatedZ.Location = new System.Drawing.Point(259, 263);
             this.labelPlayerCalculatedZ.Name = "labelPlayerCalculatedZ";
             this.labelPlayerCalculatedZ.Size = new System.Drawing.Size(25, 27);
             this.labelPlayerCalculatedZ.TabIndex = 10;
@@ -240,7 +249,7 @@
             // 
             this.labelPlayerCalculatedX.AutoSize = true;
             this.labelPlayerCalculatedX.Font = new System.Drawing.Font("Roboto", 16F);
-            this.labelPlayerCalculatedX.Location = new System.Drawing.Point(259, 215);
+            this.labelPlayerCalculatedX.Location = new System.Drawing.Point(259, 195);
             this.labelPlayerCalculatedX.Name = "labelPlayerCalculatedX";
             this.labelPlayerCalculatedX.Size = new System.Drawing.Size(26, 27);
             this.labelPlayerCalculatedX.TabIndex = 9;
@@ -250,12 +259,34 @@
             // 
             this.labelDeveloped.AutoSize = true;
             this.labelDeveloped.Font = new System.Drawing.Font("Roboto", 8F);
-            this.labelDeveloped.Location = new System.Drawing.Point(7, 378);
+            this.labelDeveloped.Location = new System.Drawing.Point(16, 378);
             this.labelDeveloped.Name = "labelDeveloped";
             this.labelDeveloped.Size = new System.Drawing.Size(521, 13);
             this.labelDeveloped.TabIndex = 15;
             this.labelDeveloped.Text = "Developed by xXxProKill - GitHub repository can be found here: https://github.com" +
     "/Oliver2Goetz/AIUtils";
+            // 
+            // checkboxShowWindowOnTop
+            // 
+            this.checkboxShowWindowOnTop.AutoSize = true;
+            this.checkboxShowWindowOnTop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.checkboxShowWindowOnTop.Font = new System.Drawing.Font("Roboto", 10F);
+            this.checkboxShowWindowOnTop.Location = new System.Drawing.Point(17, 317);
+            this.checkboxShowWindowOnTop.Name = "checkboxShowWindowOnTop";
+            this.checkboxShowWindowOnTop.Size = new System.Drawing.Size(154, 21);
+            this.checkboxShowWindowOnTop.TabIndex = 16;
+            this.checkboxShowWindowOnTop.Text = "show window on top";
+            this.checkboxShowWindowOnTop.UseVisualStyleBackColor = true;
+            this.checkboxShowWindowOnTop.CheckedChanged += new System.EventHandler(this.checkboxShowWindowOnTop_CheckedChanged);
+            // 
+            // labelDivider2
+            // 
+            this.labelDivider2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelDivider2.Font = new System.Drawing.Font("Roboto", 16F);
+            this.labelDivider2.Location = new System.Drawing.Point(10, 360);
+            this.labelDivider2.Name = "labelDivider2";
+            this.labelDivider2.Size = new System.Drawing.Size(580, 2);
+            this.labelDivider2.TabIndex = 17;
             // 
             // AIUtils
             // 
@@ -264,6 +295,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(600, 400);
             this.ControlBox = false;
+            this.Controls.Add(this.labelDivider2);
+            this.Controls.Add(this.checkboxShowWindowOnTop);
             this.Controls.Add(this.labelDeveloped);
             this.Controls.Add(this.labelOpenCAGE);
             this.Controls.Add(this.textboxPlayerCoordinateCalculatedZ);
@@ -321,6 +354,8 @@
         private System.Windows.Forms.Label labelPlayerCalculatedZ;
         private System.Windows.Forms.Label labelPlayerCalculatedX;
         private System.Windows.Forms.Label labelDeveloped;
+        private System.Windows.Forms.CheckBox checkboxShowWindowOnTop;
+        private System.Windows.Forms.Label labelDivider2;
     }
 }
 

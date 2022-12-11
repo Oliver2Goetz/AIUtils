@@ -234,6 +234,14 @@ namespace AIUtils {
             
             return levels;
         }
+
+        private void checkboxShowWindowOnTop_CheckedChanged(object sender, EventArgs e) {
+            if(checkboxShowWindowOnTop.Checked) {
+                AIUtils.ActiveForm.TopMost = true;
+            } else {
+                AIUtils.ActiveForm.TopMost = false;
+            }
+        }
     }
 
     public class Level {
