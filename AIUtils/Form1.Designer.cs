@@ -75,6 +75,7 @@
             this.comboboxLevels.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboboxLevels.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboboxLevels.BackColor = System.Drawing.Color.White;
+            this.comboboxLevels.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboboxLevels.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboboxLevels.FormattingEnabled = true;
             this.comboboxLevels.Location = new System.Drawing.Point(94, 78);
@@ -274,7 +275,8 @@
             this.checkboxShowWindowOnTop.Location = new System.Drawing.Point(17, 317);
             this.checkboxShowWindowOnTop.Name = "checkboxShowWindowOnTop";
             this.checkboxShowWindowOnTop.Size = new System.Drawing.Size(154, 21);
-            this.checkboxShowWindowOnTop.TabIndex = 16;
+            this.checkboxShowWindowOnTop.TabIndex = 0;
+            this.checkboxShowWindowOnTop.TabStop = false;
             this.checkboxShowWindowOnTop.Text = "show window on top";
             this.checkboxShowWindowOnTop.UseVisualStyleBackColor = true;
             this.checkboxShowWindowOnTop.CheckedChanged += new System.EventHandler(this.checkboxShowWindowOnTop_CheckedChanged);

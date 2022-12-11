@@ -222,6 +222,7 @@ namespace AIUtils {
 
         private void comboboxLevels_SelectedIndexChanged(object sender, EventArgs e) {
             currentLevel = (string)comboboxLevels.SelectedItem;
+            changeFocus();
         }
 
         private List<String> getLevels() {
@@ -241,6 +242,14 @@ namespace AIUtils {
             } else {
                 AIUtils.ActiveForm.TopMost = false;
             }
+            changeFocus();
+        }
+
+        /*
+         * Change focus to the headline so we do not have any annoying highlighting
+         */
+        private void changeFocus() {
+            labelHeadline.Focus();
         }
     }
 
