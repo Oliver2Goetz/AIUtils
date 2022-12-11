@@ -46,6 +46,7 @@
             this.labelDivider2 = new System.Windows.Forms.Label();
             this.pictureboxExit = new System.Windows.Forms.PictureBox();
             this.pictureboxMinimize = new System.Windows.Forms.PictureBox();
+            this.buttonRefreshBaseAddress = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxExit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxMinimize)).BeginInit();
             this.SuspendLayout();
@@ -304,6 +305,20 @@
             this.pictureboxMinimize.TabStop = false;
             this.pictureboxMinimize.Click += new System.EventHandler(this.pictureboxMinimize_Click);
             // 
+            // buttonRefreshBaseAddress
+            // 
+            this.buttonRefreshBaseAddress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.buttonRefreshBaseAddress.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonRefreshBaseAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonRefreshBaseAddress.Location = new System.Drawing.Point(488, 75);
+            this.buttonRefreshBaseAddress.Name = "buttonRefreshBaseAddress";
+            this.buttonRefreshBaseAddress.Size = new System.Drawing.Size(100, 30);
+            this.buttonRefreshBaseAddress.TabIndex = 0;
+            this.buttonRefreshBaseAddress.TabStop = false;
+            this.buttonRefreshBaseAddress.Text = "Refresh";
+            this.buttonRefreshBaseAddress.UseVisualStyleBackColor = true;
+            this.buttonRefreshBaseAddress.Click += new System.EventHandler(this.buttonRefreshBaseAddress_Click);
+            // 
             // AIUtils
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -311,6 +326,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(600, 400);
             this.ControlBox = false;
+            this.Controls.Add(this.buttonRefreshBaseAddress);
             this.Controls.Add(this.pictureboxMinimize);
             this.Controls.Add(this.labelDivider2);
             this.Controls.Add(this.checkboxShowWindowOnTop);
@@ -375,6 +391,7 @@
         private System.Windows.Forms.CheckBox checkboxShowWindowOnTop;
         private System.Windows.Forms.Label labelDivider2;
         private System.Windows.Forms.PictureBox pictureboxMinimize;
+        private System.Windows.Forms.Button buttonRefreshBaseAddress;
     }
 }
 

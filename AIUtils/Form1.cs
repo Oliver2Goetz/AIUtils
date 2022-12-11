@@ -258,6 +258,14 @@ namespace AIUtils {
         private void changeFocus() {
             labelHeadline.Focus();
         }
+
+        /*
+         * Button to refresh the baseAddress (eg. after restarting the game)
+         */
+        private void buttonRefreshBaseAddress_Click(object sender, EventArgs e) {
+            vam = new VAMemory(process);
+            baseAddress = this.getBaseAddress("AI.exe");
+        }
     }
 
     public class Level {
