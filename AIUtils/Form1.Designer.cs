@@ -23,6 +23,7 @@
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent() {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AIUtils));
             this.labelHeadline = new System.Windows.Forms.Label();
             this.comboboxLevels = new System.Windows.Forms.ComboBox();
             this.labelPlayerX = new System.Windows.Forms.Label();
@@ -44,11 +45,11 @@
             this.labelDeveloped = new System.Windows.Forms.Label();
             this.checkboxShowWindowOnTop = new System.Windows.Forms.CheckBox();
             this.labelDivider2 = new System.Windows.Forms.Label();
-            this.pictureboxExit = new System.Windows.Forms.PictureBox();
-            this.pictureboxMinimize = new System.Windows.Forms.PictureBox();
             this.buttonRefreshBaseAddress = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxExit)).BeginInit();
+            this.pictureboxMinimize = new System.Windows.Forms.PictureBox();
+            this.pictureboxExit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxExit)).BeginInit();
             this.SuspendLayout();
             // 
             // labelHeadline
@@ -281,30 +282,6 @@
             this.labelDivider2.Size = new System.Drawing.Size(580, 2);
             this.labelDivider2.TabIndex = 17;
             // 
-            // pictureboxExit
-            // 
-            this.pictureboxExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureboxExit.Image = global::AIUtils.Properties.Resources.cross;
-            this.pictureboxExit.Location = new System.Drawing.Point(548, 12);
-            this.pictureboxExit.Name = "pictureboxExit";
-            this.pictureboxExit.Size = new System.Drawing.Size(40, 40);
-            this.pictureboxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureboxExit.TabIndex = 0;
-            this.pictureboxExit.TabStop = false;
-            this.pictureboxExit.Click += new System.EventHandler(this.pictureboxExit_Click);
-            // 
-            // pictureboxMinimize
-            // 
-            this.pictureboxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureboxMinimize.Image = global::AIUtils.Properties.Resources.line;
-            this.pictureboxMinimize.Location = new System.Drawing.Point(497, 12);
-            this.pictureboxMinimize.Name = "pictureboxMinimize";
-            this.pictureboxMinimize.Size = new System.Drawing.Size(40, 40);
-            this.pictureboxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureboxMinimize.TabIndex = 18;
-            this.pictureboxMinimize.TabStop = false;
-            this.pictureboxMinimize.Click += new System.EventHandler(this.pictureboxMinimize_Click);
-            // 
             // buttonRefreshBaseAddress
             // 
             this.buttonRefreshBaseAddress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -318,6 +295,30 @@
             this.buttonRefreshBaseAddress.Text = "Refresh";
             this.buttonRefreshBaseAddress.UseVisualStyleBackColor = true;
             this.buttonRefreshBaseAddress.Click += new System.EventHandler(this.buttonRefreshBaseAddress_Click);
+            // 
+            // pictureboxMinimize
+            // 
+            this.pictureboxMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureboxMinimize.Image = global::AIUtils.Properties.Resources.line;
+            this.pictureboxMinimize.Location = new System.Drawing.Point(497, 12);
+            this.pictureboxMinimize.Name = "pictureboxMinimize";
+            this.pictureboxMinimize.Size = new System.Drawing.Size(40, 40);
+            this.pictureboxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureboxMinimize.TabIndex = 18;
+            this.pictureboxMinimize.TabStop = false;
+            this.pictureboxMinimize.Click += new System.EventHandler(this.pictureboxMinimize_Click);
+            // 
+            // pictureboxExit
+            // 
+            this.pictureboxExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureboxExit.Image = global::AIUtils.Properties.Resources.cross;
+            this.pictureboxExit.Location = new System.Drawing.Point(548, 12);
+            this.pictureboxExit.Name = "pictureboxExit";
+            this.pictureboxExit.Size = new System.Drawing.Size(40, 40);
+            this.pictureboxExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureboxExit.TabIndex = 0;
+            this.pictureboxExit.TabStop = false;
+            this.pictureboxExit.Click += new System.EventHandler(this.pictureboxExit_Click);
             // 
             // AIUtils
             // 
@@ -353,14 +354,15 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AIUtils";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AIUtils";
             this.Load += new System.EventHandler(this.AIUtils_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AIUtils_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxExit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxExit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
