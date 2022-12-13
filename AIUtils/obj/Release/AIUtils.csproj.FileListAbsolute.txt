@@ -1,12 +1,10 @@
 D:\Visual Studio Projects\AIUtils\AIUtils\bin\Release\AIUtils.exe.config
 D:\Visual Studio Projects\AIUtils\AIUtils\bin\Release\AIUtils.exe
 D:\Visual Studio Projects\AIUtils\AIUtils\bin\Release\AIUtils.pdb
-D:\Visual Studio Projects\AIUtils\AIUtils\bin\Release\VAMemory.dll
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Release\AIUtils.csprojAssemblyReference.cache
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Release\AIUtils.AIUtils.resources
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Release\AIUtils.Properties.Resources.resources
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Release\AIUtils.csproj.GenerateResource.cache
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Release\AIUtils.csproj.CoreCompileInputs.cache
-D:\Visual Studio Projects\AIUtils\AIUtils\obj\Release\AIUtils.csproj.CopyComplete
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Release\AIUtils.exe
 D:\Visual Studio Projects\AIUtils\AIUtils\obj\Release\AIUtils.pdb
