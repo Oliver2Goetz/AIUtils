@@ -9,14 +9,13 @@ namespace AIUtils {
 
             // todo calculate the new coordinates for each 
             switch(level.name) {
-                case "SCI_HOSPITAL_UPPER":
+                case "SCI_HOSPITALUPPER":
                     calculatedLevel = calculateSciHospitalUpper(level);
                     break;
 
                 case "TECH_COMMS":
-                    calculatedLevel = calculateTechComms(level);
-                    break;
-
+                case "TECH_HUB":
+                case "-":
                 case "":
                 default:
                     calculatedLevel = level;
@@ -33,17 +32,6 @@ namespace AIUtils {
             calculatedLevel.x = level.z + 107;
             calculatedLevel.y = level.y;
             calculatedLevel.z = (-1 * level.x) + 16;
-
-            return calculatedLevel;
-        }
-
-        private static Level calculateTechComms(Level level) {
-            Level calculatedLevel = new Level();
-
-            calculatedLevel.name = level.name;
-            calculatedLevel.x = level.z;
-            calculatedLevel.y = level.y + 0;
-            calculatedLevel.z = level.x;
 
             return calculatedLevel;
         }

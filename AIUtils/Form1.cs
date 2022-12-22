@@ -28,8 +28,7 @@ namespace AIUtils {
             refreshLevels();
 
             // VAMemory setup
-            vam = new VAMemory(process);
-            this.baseAddress = this.getBaseAddress("AI.exe");
+            this.vamSetup();
 
             // Async thread to updateLabelValues
             ThreadStart threadStart = new ThreadStart(asyncTask);
@@ -42,35 +41,54 @@ namespace AIUtils {
          * this async task handels memory reading and the displaying of the coordinates
          */
         private void asyncTask() {
+            String dialogText = "Make sure you have AI running.\nClick retry to retry or cancel to close the program.";
+            String dialogCaption = "AIUtils error occured";
+
             while (true) {
-                float playerX = readPlayerX();
-                float playerY = readPlayerY();
-                float playerZ = readPlayerZ();
+                try {
+                    if(this.baseAddress.ToInt32() == 0) {
+                        throw new Exception();
+                    }
+                    float playerX = readPlayerX();
+                    float playerY = readPlayerY();
+                    float playerZ = readPlayerZ();
 
-                Level level = new Level(currentLevel, playerX, playerY, playerZ);
-                Level calculatedLevel = LevelCalculation.calculateLevel(level);
+                    Level level = new Level(currentLevel, playerX, playerY, playerZ);
+                    Level calculatedLevel = LevelCalculation.calculateLevel(level);
 
-                // write coordinated into the form fields
-                delUpdateUITextBox delUpdateX = new delUpdateUITextBox(updatePlayerCoordinateX);
-                textboxPlayerCoordinateX.BeginInvoke(delUpdateX, playerX.ToString());
+                    // write coordinated into the form fields
+                    delUpdateUITextBox delUpdateX = new delUpdateUITextBox(updatePlayerCoordinateX);
+                    textboxPlayerCoordinateX.BeginInvoke(delUpdateX, playerX.ToString());
 
-                delUpdateUITextBox delUpdateY = new delUpdateUITextBox(updatePlayerCoordinateY);
-                textboxPlayerCoordinateY.BeginInvoke(delUpdateY, playerY.ToString());
+                    delUpdateUITextBox delUpdateY = new delUpdateUITextBox(updatePlayerCoordinateY);
+                    textboxPlayerCoordinateY.BeginInvoke(delUpdateY, playerY.ToString());
 
-                delUpdateUITextBox delUpdateZ = new delUpdateUITextBox(updatePlayerCoordinateZ);
-                textboxPlayerCoordinateZ.BeginInvoke(delUpdateZ, playerZ.ToString());
+                    delUpdateUITextBox delUpdateZ = new delUpdateUITextBox(updatePlayerCoordinateZ);
+                    textboxPlayerCoordinateZ.BeginInvoke(delUpdateZ, playerZ.ToString());
 
-                delUpdateUITextBox delUpdateCalcX = new delUpdateUITextBox(updatePlayerCoordinateCalculatedX);
-                textboxPlayerCoordinateCalculatedX.BeginInvoke(delUpdateCalcX, calculatedLevel.x.ToString());
+                    delUpdateUITextBox delUpdateCalcX = new delUpdateUITextBox(updatePlayerCoordinateCalculatedX);
+                    textboxPlayerCoordinateCalculatedX.BeginInvoke(delUpdateCalcX, calculatedLevel.x.ToString());
 
-                delUpdateUITextBox delUpdateCalcY = new delUpdateUITextBox(updatePlayerCoordinateCalculatedY);
-                textboxPlayerCoordinateCalculatedY.BeginInvoke(delUpdateCalcY, calculatedLevel.y.ToString());
+                    delUpdateUITextBox delUpdateCalcY = new delUpdateUITextBox(updatePlayerCoordinateCalculatedY);
+                    textboxPlayerCoordinateCalculatedY.BeginInvoke(delUpdateCalcY, calculatedLevel.y.ToString());
 
-                delUpdateUITextBox delUpdateCalcZ = new delUpdateUITextBox(updatePlayerCoordinateCalculatedZ);
-                textboxPlayerCoordinateCalculatedZ.BeginInvoke(delUpdateCalcZ, calculatedLevel.z.ToString());
-
+                    delUpdateUITextBox delUpdateCalcZ = new delUpdateUITextBox(updatePlayerCoordinateCalculatedZ);
+                    textboxPlayerCoordinateCalculatedZ.BeginInvoke(delUpdateCalcZ, calculatedLevel.z.ToString());
+                } catch {
+                    DialogResult result = MessageBox.Show(dialogText, dialogCaption, MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning);
+                    if(result == DialogResult.Retry) {
+                        this.vamSetup();
+                    } else if (result == DialogResult.Cancel) {
+                        Application.Exit();
+                    }
+                }
                 Thread.Sleep(100);
             }
+        }
+
+        private void vamSetup() {
+            vam = new VAMemory(process);
+            this.baseAddress = this.getBaseAddress("AI.exe");
         }
 
         /*
@@ -162,6 +180,17 @@ namespace AIUtils {
             return z;
         }
 
+        /*
+         * TODO Implement player rotation
+         * 
+         * Reads the x rotation of the player
+         */
+        public float readPlayerRorationX() {
+            int staticPointer = 0x0;
+
+            return 0f;
+        }
+
         #endregion memory handling
 
         #region form
@@ -234,8 +263,8 @@ namespace AIUtils {
 
         private List<String> getLevels() {
             List<String> levels = new List<String>() {
-                "SCI_HOSPITAL_UPPER",
-                "TECH_COMMS"
+                "-",
+                "SCI_HOSPITALUPPER"
             };
 
             levels.Sort();
@@ -263,8 +292,7 @@ namespace AIUtils {
          * Button to refresh the baseAddress (eg. after restarting the game)
          */
         private void buttonRefreshBaseAddress_Click(object sender, EventArgs e) {
-            vam = new VAMemory(process);
-            baseAddress = this.getBaseAddress("AI.exe");
+            this.vamSetup();
         }
     }
 
