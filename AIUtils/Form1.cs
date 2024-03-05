@@ -264,6 +264,9 @@ namespace AIUtils {
         private List<String> getLevels() {
             List<String> levels = new List<String>() {
                 "-",
+                "ENG_REACTOR_CORE (PT1)",
+                "HAB_AIRPORT (M17)",
+                "HAB_CORPORATEPENT",
                 "SCI_HOSPITALUPPER"
             };
 
