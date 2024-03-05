@@ -14,7 +14,7 @@ AIUtils is a program which automatically calculates the coordinates for Alien Is
 ### General
 Alien Isolation has to be opened first, then start AIUtils. After loading into a level select it in the dropdown list. The normal coordinates and translated coordinated for OpenCAGE will be shown in their respective fields.<br>
 As it seems right now the left coordinates are for objects inside the AYZ composite. The OpenCAGE coordinates are usually what to use in the SCRIPT_STORYMISSION composite.<br>
-Currently SCI_HOSPITALUPPER is the only known level to have this.
+Known levels ENG_REACTOR_CORE (PT1), HAB_AIRPORT (M17), HAB_CORPORATEPENT, SCI_HOSPITALUPPER
 
 ### Refresh
 Refresh updates the AI process. This is needed after restarting the game.<br>
@@ -25,3 +25,6 @@ It does what it says
 
 ## Problems
 If you face the problem that the coordinates are not getting updated either try clicking the "refresh" button or reload the mission/level.
+
+### Special Credits
+Data for the offsets were gathered by using the modding tool [OpenCAGE](https://github.com/MattFiler/OpenCAGE) developed by [MattFiler](https://github.com/MattFiler).
