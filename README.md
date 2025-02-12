@@ -13,8 +13,9 @@ AIUtils is a program which automatically calculates the coordinates for Alien Is
 
 ### General
 Alien Isolation has to be opened first, then start AIUtils. After loading into a level select it in the dropdown list if apparent. The normal coordinates and translated coordinates for OpenCAGE will be shown in their respective fields. Keep in mind only levels with offsets are selectable. Other levels are categorized in the "-" option.<br>
-As it seems right now the left coordinates are for objects inside the AYZ composite. The OpenCAGE coordinates are usually what to use in the SCRIPT_STORYMISSION composite.<br>
-Known levels with offsets: ENG_REACTOR_CORE (PT1), HAB_AIRPORT (M17), HAB_CORPORATEPENT, SCI_HOSPITALUPPER
+As it seems right now the left coordinates are for objects inside the AYZ composite. The OpenCAGE coordinates are usually what to use in the SCRIPT_STORYMISSION composite.<br><br>
+Known levels with offsets: ENG_REACTOR_CORE (PT1), HAB_AIRPORT (M17), HAB_CORPORATEPENT, SCI_HOSPITALUPPER<br>
+DLC levels do not have offsets and will not be listed separately.
 
 ### Refresh
 Refresh updates the AI process.<br>
