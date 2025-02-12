@@ -127,11 +127,11 @@ namespace AIUtils {
          * Reads the x coordinate of the player
          */
         public float readPlayerX() {
-            int staticPointer = 0x012F0C88;
-            int offset0 = 0x24;
-            int offset1 = 0x70;
-            int offset2 = 0x0;
-            int offset3 = 0x174;
+            int staticPointer = 0x123623C;
+            int offset0 = 0x14;
+            int offset1 = 0x374;
+            int offset2 = 0x4;
+            int offset3 = 0x70;
 
             int addr = vam.ReadInt32((IntPtr)(this.baseAddress.ToInt32() + staticPointer));
             addr = vam.ReadInt32((IntPtr)(addr + offset0));
@@ -146,11 +146,11 @@ namespace AIUtils {
          * Reads the y coordinate of the player
          */
          public float readPlayerY() {
-            int staticPointer = 0x012F0C88;
-            int offset0 = 0x24;
-            int offset1 = 0x70;
-            int offset2 = 0x0;
-            int offset3 = 0x178;
+            int staticPointer = 0x123623C;
+            int offset0 = 0x14;
+            int offset1 = 0x374;
+            int offset2 = 0x4;
+            int offset3 = 0x74;
 
             int addr = vam.ReadInt32((IntPtr)(this.baseAddress.ToInt32() + staticPointer));
             addr = vam.ReadInt32((IntPtr)(addr + offset0));
@@ -165,11 +165,11 @@ namespace AIUtils {
          * Reads the z coordinate of the player
          */
         public float readPlayerZ() {
-            int staticPointer = 0x012F0C88;
-            int offset0 = 0x24;
-            int offset1 = 0x70;
-            int offset2 = 0x0;
-            int offset3 = 0x17C;
+            int staticPointer = 0x123623C;
+            int offset0 = 0x14;
+            int offset1 = 0x374;
+            int offset2 = 0x4;
+            int offset3 = 0x78;
 
             int addr = vam.ReadInt32((IntPtr)(this.baseAddress.ToInt32() + staticPointer));
             addr = vam.ReadInt32((IntPtr)(addr + offset0));
