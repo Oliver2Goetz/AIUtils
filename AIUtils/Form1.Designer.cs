@@ -115,7 +115,7 @@
             this.textboxPlayerCoordinateX.Location = new System.Drawing.Point(51, 195);
             this.textboxPlayerCoordinateX.Name = "textboxPlayerCoordinateX";
             this.textboxPlayerCoordinateX.ReadOnly = true;
-            this.textboxPlayerCoordinateX.Size = new System.Drawing.Size(133, 26);
+            this.textboxPlayerCoordinateX.Size = new System.Drawing.Size(150, 26);
             this.textboxPlayerCoordinateX.TabIndex = 0;
             this.textboxPlayerCoordinateX.TabStop = false;
             // 
@@ -127,7 +127,7 @@
             this.textboxPlayerCoordinateY.Location = new System.Drawing.Point(51, 229);
             this.textboxPlayerCoordinateY.Name = "textboxPlayerCoordinateY";
             this.textboxPlayerCoordinateY.ReadOnly = true;
-            this.textboxPlayerCoordinateY.Size = new System.Drawing.Size(133, 26);
+            this.textboxPlayerCoordinateY.Size = new System.Drawing.Size(150, 26);
             this.textboxPlayerCoordinateY.TabIndex = 4;
             this.textboxPlayerCoordinateY.TabStop = false;
             // 
@@ -139,7 +139,7 @@
             this.textboxPlayerCoordinateZ.Location = new System.Drawing.Point(51, 263);
             this.textboxPlayerCoordinateZ.Name = "textboxPlayerCoordinateZ";
             this.textboxPlayerCoordinateZ.ReadOnly = true;
-            this.textboxPlayerCoordinateZ.Size = new System.Drawing.Size(133, 26);
+            this.textboxPlayerCoordinateZ.Size = new System.Drawing.Size(150, 26);
             this.textboxPlayerCoordinateZ.TabIndex = 5;
             this.textboxPlayerCoordinateZ.TabStop = false;
             // 
@@ -190,7 +190,7 @@
             this.textboxPlayerCoordinateCalculatedZ.Location = new System.Drawing.Point(298, 263);
             this.textboxPlayerCoordinateCalculatedZ.Name = "textboxPlayerCoordinateCalculatedZ";
             this.textboxPlayerCoordinateCalculatedZ.ReadOnly = true;
-            this.textboxPlayerCoordinateCalculatedZ.Size = new System.Drawing.Size(133, 26);
+            this.textboxPlayerCoordinateCalculatedZ.Size = new System.Drawing.Size(150, 26);
             this.textboxPlayerCoordinateCalculatedZ.TabIndex = 13;
             this.textboxPlayerCoordinateCalculatedZ.TabStop = false;
             // 
@@ -202,7 +202,7 @@
             this.textboxPlayerCoordinateCalculatedY.Location = new System.Drawing.Point(298, 229);
             this.textboxPlayerCoordinateCalculatedY.Name = "textboxPlayerCoordinateCalculatedY";
             this.textboxPlayerCoordinateCalculatedY.ReadOnly = true;
-            this.textboxPlayerCoordinateCalculatedY.Size = new System.Drawing.Size(133, 26);
+            this.textboxPlayerCoordinateCalculatedY.Size = new System.Drawing.Size(150, 26);
             this.textboxPlayerCoordinateCalculatedY.TabIndex = 12;
             this.textboxPlayerCoordinateCalculatedY.TabStop = false;
             // 
@@ -214,7 +214,7 @@
             this.textboxPlayerCoordinateCalculatedX.Location = new System.Drawing.Point(298, 195);
             this.textboxPlayerCoordinateCalculatedX.Name = "textboxPlayerCoordinateCalculatedX";
             this.textboxPlayerCoordinateCalculatedX.ReadOnly = true;
-            this.textboxPlayerCoordinateCalculatedX.Size = new System.Drawing.Size(133, 26);
+            this.textboxPlayerCoordinateCalculatedX.Size = new System.Drawing.Size(150, 26);
             this.textboxPlayerCoordinateCalculatedX.TabIndex = 8;
             this.textboxPlayerCoordinateCalculatedX.TabStop = false;
             // 
